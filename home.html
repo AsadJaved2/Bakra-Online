@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Bakra Online</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body data-page-type="Home">
+    <div id="navbar-placeholder"></div>
+    <div class="filters">
+        <label for="location">Location:</label>
+        <select id="location">
+            <option value="all">All</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Islamabad">Islamabad</option>
+        </select>
+        
+        <button id="filterBtn">Filter</button>
+    </div>
+    <main>
+        <section class="featured">
+            <h2>Featured Animals</h2>
+            <div id="animal-list">
+                <!-- Dynamic animal cards will go here -->
+            </div>
+        </section>
+    </main>
+    <script src="js/home.js"></script>
+    <script src="js/navbar-loader.js"></script>
+</body>
+</html>

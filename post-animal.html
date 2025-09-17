@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Animal Ad - BakraOnline</title>
+    <link rel="stylesheet" href="css/post-animal.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <div class="container">
+        <div class="post-header">
+            <h1>Post Your Animal for Sale</h1>
+        </div>
+
+        <form id="postAnimalForm" class="post-form">
+            <div class="form-group">
+                <label for="title">Ad Title<span class="required">*</span></label>
+                <input type="text" id="title" placeholder="Enter Ad Title" required>
+            </div>
+
+            <div class="form-group">
+                <label>Category<span class="required">*</span></label>
+                <div class="category-icons">
+                    <div class="category-option" data-category="Cow">
+                        <img src="img/cows.png" alt="Cow">
+                        <span>Cow</span>
+                    </div>
+                    <div class="category-option" data-category="Goat">
+                        <img src="img/goats.png" alt="Goat">
+                        <span>Goat</span>
+                    </div>
+                    <div class="category-option" data-category="Camel">
+                        <img src="img/camels.png" alt="Camel">
+                        <span>Camel</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price<span class="required">*</span></label>
+                <div class="price-input">
+                    <input type="number" id="price" placeholder="Enter Price in Rupees" required>
+                    <span class="currency">Rs.</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="weight">Weight</label>
+                <div class="weight-input">
+                    <input type="number" id="weight" placeholder="Enter Weight">
+                    <span class="unit">KG</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age<span class="required">*</span></label>
+                <div class="age-input">
+                    <input type="number" id="age" placeholder="Enter Age">
+                    <span class="unit">month</span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Valid for Qurbani<span class="required">*</span></label>
+                <div class="radio-group">
+                    <label class="radio">
+                        <input type="radio" name="qurbani" value="yes" checked>
+                        <span>Yes</span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="qurbani" value="no">
+                        <span>No</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender<span class="required">*</span></label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="breed">Breed<span class="required">*</span></label>
+                <input type="text" id="breed" placeholder="Enter Animal Breed" required>
+            </div>
+
+            <div class="form-group">
+                    <label for="location">Location:</label>
+                    <select id="location">
+                        <option value="Lahore">Lahore</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Islamabad">Peshawar</option>
+                        <option value="Islamabad">Gujranwala</option>
+                        <option value="Islamabad">Sahiwal</option>
+                    </select>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Ad Description<span class="required">*</span></label>
+                <textarea id="description" placeholder="Include the breed, age, color, price etc." required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="tags">Ad Tags</label>
+                <textarea id="tags" placeholder="Keywords for animal breed, animal name, separated by comma."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="image">Upload Image<span class="required">*</span></label>
+                <input type="file" id="image" accept="image/*" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Post Ad</button>
+        </form>
+    </div>
+    <script src="js/navbar-loader.js"></script>
+    <script src="js/post-animal.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Profile Container */
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.profile-info {
+    background: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.profile-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#editProfile {
+    background: #008080;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#editProfile:hover {
+    background: #006666;
+}
+
+/* Edit Profile Form */
+.edit-profile-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.edit-profile-form label {
+    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+}
+
+.edit-profile-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#saveProfile {
+    background: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#saveProfile:hover {
+    background: #218838;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #008080;
+    color: white;
+    margin-top: 30px;
+    font-size: 14px;
+}
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    #animal-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .animal-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}

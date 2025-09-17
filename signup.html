@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Signup</h2>
+        <form id="signupForm">
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Create password" required>
+                <p id="strength"></p>  <!-- Password strength indicator -->
+            </div>
+
+            <div class="password-container">
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
+            </div>
+
+            <p id="message"></p>  <!-- Error messages will be displayed here -->
+
+            <button type="submit">Signup</button>
+        </form>
+
+        <div class="login-options">
+            <p>Already have an account? <a href="login.html" class="login-link">Login</a></p>
+            <div class="divider">Or</div>
+            <button class="social-btn facebook">
+                <img src="img/facebook.png" alt="Facebook">
+                Login with Facebook
+            </button>
+            <button class="social-btn google">
+                <img src="img/google.png" alt="Google">
+                Login with Google
+            </button>
+        </div>
+    </div>
+    <script src="js/signup.js"></script>
+</body>
+</html>
